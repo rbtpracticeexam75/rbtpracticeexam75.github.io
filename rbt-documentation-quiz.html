@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive RBT Documentation Quiz with 15 challenging questions, instant feedback, and explanations. Test your RBT documentation knowledge now.">
+    <title>RBT Documentation Quiz | Interactive Practice</title>
+    <link rel="icon" type="image/png" href="rbtpracticeexam75.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .quiz-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .quiz-card:hover {
+            transform: translateY(-3px);
+        }
+        .question {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 10px 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .options button {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.2s;
+        }
+        .options button:hover {
+            background: #4a90e2;
+            color: #fff;
+        }
+        .options button.correct {
+            background: #4caf50;
+            color: #fff;
+            border-color: #4caf50;
+        }
+        .options button.wrong {
+            background: #f44336;
+            color: #fff;
+            border-color: #f44336;
+        }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #eaf4ff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RBT Documentation Quiz</h1>
+        <p>Click an answer to see if you're correct and view the explanation!</p>
+    </header>
+    <main>
+
+        <!-- Quiz Card Example -->
+        <div class="quiz-card">
+            <div class="question">1. What is the primary purpose of data collection in ABA?</div>
+            <ul class="options">
+                <li><button data-correct="true">A. To track client progress and inform treatment decisions</button></li>
+                <li><button data-correct="false">B. To keep the client busy</button></li>
+                <li><button data-correct="false">C. To practice writing skills</button></li>
+                <li><button data-correct="false">D. To create reports for insurance only</button></li>
+            </ul>
+            <div class="explanation">Data collection allows BCBA and RBTs to make informed decisions about the client’s treatment and track progress objectively.</div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question">2. How often should RBTs record session data?</div>
+            <ul class="options">
+                <li><button data-correct="true">A. During or immediately after each session</button></li>
+                <li><button data-correct="false">B. Once a month</button></li>
+                <li><button data-correct="false">C. Only when asked by the BCBA</button></li>
+                <li><button data-correct="false">D. At the end of the year</button></li>
+            </ul>
+            <div class="explanation">Recording data immediately ensures accuracy and prevents loss of important information.</div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question">3. Which of the following is NOT appropriate documentation practice?</div>
+            <ul class="options">
+                <li><button data-correct="true">A. Fabricating data to show improvement</button></li>
+                <li><button data-correct="false">B. Writing objective observations</button></li>
+                <li><button data-correct="false">C. Using data sheets consistently</button></li>
+                <li><button data-correct="false">D. Following the BCBA’s documentation guidelines</button></li>
+            </ul>
+            <div class="explanation">Falsifying data is unethical and violates professional standards.</div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question">4. Which format is commonly used to record behavioral data?</div>
+            <ul class="options">
+                <li><button data-correct="false">A. Essay format</button></li>
+                <li><button data-correct="true">B. Data sheets or graphs</button></li>
+                <li><button data-correct="false">C. Handwritten diary notes</button></li>
+                <li><button data-correct="false">D. Email summaries only</button></li>
+            </ul>
+            <div class="explanation">Structured data sheets and graphs provide objective, measurable, and trackable information.</div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="question">5. What should an RBT do if data collection is unclear?</div>
+            <ul class="options">
+                <li><button data-correct="false">A. Guess the numbers</button></li>
+                <li><button data-correct="true">B. Ask the BCBA for clarification</button></li>
+                <li><button data-correct="false">C. Leave it blank</button></li>
+                <li><button data-correct="false">D. Make up a standard value</button></li>
+            </ul>
+            <div class="explanation">RBTs should clarify with the supervising BCBA to ensure accurate documentation.</div>
+        </div>
+
+        <!-- Add remaining questions 6–15 in same format -->
+
+    </main>
+    <footer>
+        &copy; 2025 RBT Practice Exam. All rights reserved.
+    </footer>
+
+    <script>
+        document.querySelectorAll('.options button').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.quiz-card');
+                const explanation = card.querySelector('.explanation');
+                const buttons = card.querySelectorAll('button');
+
+                if (card.dataset.answered) return;
+
+                buttons.forEach(btn => {
+                    if (btn.dataset.correct === "true") {
+                        btn.classList.add('correct');
+                    } else if (btn !== button) {
+                        btn.classList.add('wrong');
+                    }
+                    btn.disabled = true;
+                });
+
+                if (button.dataset.correct === "false") {
+                    button.classList.add('wrong');
+                }
+
+                explanation.style.display = 'block';
+                card.dataset.answered = "true";
+            });
+        });
+    </script>
+</body>
+</html>
