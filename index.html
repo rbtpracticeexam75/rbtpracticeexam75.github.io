@@ -1,12 +1,513 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RBT Practice Exam</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RBT Practice Exam — 10 Hard Practice Questions + FAQ</title>
+  <meta name="description" content="Take 10 original, challenging RBT practice questions with instant feedback and detailed explanations. Mobile-friendly, SEO-optimized, and written for RBT exam prep." />
+  <link rel="canonical" href="https://rbtpracticeexam75.github.io/" />
+  <meta property="og:title" content="RBT Practice Exam — 10 Hard Practice Questions" />
+  <meta property="og:description" content="Original RBT practice questions with explanations. Improve your skills with scenario-based items and accessible feedback." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rbtpracticeexam75.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root{
+      --max-width:940px;
+      --accent:#1565c0;
+      --muted:#64748b;
+      --bg:#f6f9fc;
+      --card-bg:#ffffff;
+      --radius:12px;
+      --gap:18px;
+      --pad:20px;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:var(--max-width);margin:22px auto;padding:16px}
+    .card{background:var(--card-bg);border-radius:var(--radius);box-shadow:0 6px 20px rgba(12,15,26,0.06);padding:var(--pad);margin-bottom:var(--gap)}
+    header .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-weight:600}
+    header h1{margin:8px 0 6px;font-size:22px}
+    header p{margin:0 0 14px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    nav.top{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    .question{border:1px solid #eef2f7;border-radius:10px;padding:14px}
+    .q-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .q-num{background:#eef7ff;color:var(--accent);padding:6px 10px;border-radius:8px;font-weight:700}
+    .options{display:flex;flex-direction:column;gap:8px}
+    .option{display:flex;align-items:center;gap:10px;padding:10px;border-radius:8px;border:1px solid #f1f5f9;cursor:pointer;background:#fff}
+    .option input{margin:0}
+    .explanation{margin-top:10px;padding:10px;border-radius:8px;background:#f8fafc;border-left:4px solid #c7e0ff;display:none}
+    .explanation.show{display:block}
+    .meta{color:var(--muted);font-size:13px;margin-top:8px}
+    footer small{color:var(--muted)}
+    .faq .item{border-top:1px solid #eef2f7;padding:12px 0}
+    .faq .question-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .faq .question-row button{background:none;border:0;padding:8px;font-weight:700;cursor:pointer}
+    .faq .answer{padding-top:10px;color:#0f172a}
+    /* Responsive */
+    @media(min-width:860px){ .grid{grid-template-columns:1fr} }
+    /* utility */
+    .muted{color:var(--muted)}
+    .kbd{display:inline-block;border-radius:6px;padding:4px 8px;background:#f1f5f9;font-weight:700;font-size:13px}
+    .icon{width:18px;height:18px;display:inline-block;vertical-align:middle}
+    .check-btn{margin-top:10px;padding:8px 12px;border-radius:8px;background:#eef2f7;border:1px solid #dbeafe;color:#0369a1;font-weight:700;cursor:pointer}
+    .correct{border-left:4px solid #10b981}
+    .incorrect{border-left:4px solid #ef4444}
+  </style>
 </head>
 <body>
-  <h1>Welcome to RBT Practice Exam</h1>
-  <p>This is your new site hosted on GitHub Pages!</p>
+  <main class="container" role="main">
+
+    <section class="card" aria-labelledby="page-title">
+      <div class="eyebrow">
+        <!-- simple book icon -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 3h9a2 2 0 0 1 2 2v14" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        RBT practice — original questions
+      </div>
+
+      <h1 id="page-title">10 Hard RBT Practice Questions — Instant Feedback</h1>
+      <p>Use these scenario-based questions to test and sharpen skills you’ll need on the RBT exam. Each question includes a **correct answer** and a **detailed explanation** so you learn while you practice.</p>
+
+      <nav class="top" aria-label="primary actions">
+        <a class="cta" href="/practice-test.html" target="_blank" rel="noopener">Take full practice test (75 Q)</a>
+        <a class="cta" href="#faqs" style="background:#0f172a">Exam FAQ</a>
+      </nav>
+
+      <div class="meta"><strong>How to use:</strong> Read the scenario, pick one option, then click <span class="kbd">Check Answer</span>. Review the explanation and move to the next question.</div>
+    </section>
+
+    <!-- Practice questions -->
+    <section id="practice" class="card" aria-labelledby="practice-heading">
+      <h2 id="practice-heading">Practice Questions</h2>
+      <p class="muted">10 scenario-based questions. These are original and targeted to test core RBT knowledge.</p>
+
+      <div class="grid" id="quiz-list">
+
+        <!-- QUESTION 1 -->
+        <article class="question" data-answer="B">
+          <div class="q-head">
+            <div class="q-num">Q1</div>
+            <div>
+              <div><strong>During a baseline observation, a client engages in 10 instances of hitting per hour. After an intervention, the client engages in 2 instances per hour. What is the most appropriate way to report change?</strong></div>
+              <div class="muted">Select the best single answer.</div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup" aria-label="Question 1 options">
+            <label class="option"><input type="radio" name="q1" value="A"> A. Report the absolute decrease: 8 fewer hits per hour.</label>
+            <label class="option"><input type="radio" name="q1" value="B"> B. Report percent reduction: (10−2)/10 × 100 = 80% reduction.</label>
+            <label class="option"><input type="radio" name="q1" value="C"> C. Report only the final rate: 2 hits per hour.</label>
+            <label class="option"><input type="radio" name="q1" value="D"> D. Report the average of baseline and intervention rates: 6 hits per hour.</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation" aria-hidden="true">
+            <strong>Answer: B.</strong>
+            <p>Use percent reduction to convey relative change when baseline rates differ across clients or conditions. An 80% reduction communicates intervention effectiveness better than raw counts alone. Include baseline and post-intervention rates too for clarity (e.g., baseline 10/hr → 2/hr; 80% reduction).</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 2 -->
+        <article class="question" data-answer="C">
+          <div class="q-head">
+            <div class="q-num">Q2</div>
+            <div>
+              <div><strong>A client reliably requests attention by tapping a staff member’s shoulder. You teach a communicative alternative and start reinforcing requests with a 30-second pause before providing attention. Which reinforcement schedule is this?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q2" value="A"> A. Fixed-ratio schedule</label>
+            <label class="option"><input type="radio" name="q2" value="B"> B. Variable-interval schedule</label>
+            <label class="option"><input type="radio" name="q2" value="C"> C. Fixed-interval schedule</label>
+            <label class="option"><input type="radio" name="q2" value="D"> D. Differential reinforcement of other behavior (DRO)</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: C.</strong>
+            <p>A fixed-interval (FI) schedule reinforces the first appropriate response after a fixed amount of time has passed (here, 30 seconds). Fixed-ratio involves number of responses; variable-interval uses unpredictable time; DRO reinforces absence of target behavior rather than the request.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 3 -->
+        <article class="question" data-answer="A">
+          <div class="q-head">
+            <div class="q-num">Q3</div>
+            <div>
+              <div><strong>You are collecting continuous data on a client’s vocal stereotypy. Which measurement system is best for capturing every instance and duration accurately?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q3" value="A"> A. Continuous event recording with duration measurement</label>
+            <label class="option"><input type="radio" name="q3" value="B"> B. Whole-interval recording</label>
+            <label class="option"><input type="radio" name="q3" value="C"> C. Momentary time sampling every 15 minutes</label>
+            <label class="option"><input type="radio" name="q3" value="D"> D. Partial-interval recording only</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: A.</strong>
+            <p>For continuous behaviors with variable duration, continuous event recording plus duration measurement captures both frequency and total time engaged. Interval methods (whole/partial/momentary) estimate occurrence and can under- or over-estimate duration for continuous stereotypy.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 4 -->
+        <article class="question" data-answer="D">
+          <div class="q-head">
+            <div class="q-num">Q4</div>
+            <div>
+              <div><strong>A client shows aggression when denied a preferred item. The team develops a plan to teach tolerance using graduated exposure: brief denials gradually lengthened. Which ethical issue must you monitor closely?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q4" value="A"> A. Data privacy concerns</label>
+            <label class="option"><input type="radio" name="q4" value="B"> B. Skill-generalization failure</label>
+            <label class="option"><input type="radio" name="q4" value="C"> C. Staff training fidelity only</label>
+            <label class="option"><input type="radio" name="q4" value="D"> D. Client distress and assent — minimize harm and monitor consent</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: D.</strong>
+            <p>Graduated exposure involves intentionally exposing the client to brief denial which may cause distress. Ethical practice requires minimizing harm, monitoring client assent/distress, and using the least intrusive effective procedures. Document responses and obtain informed consent from guardians as appropriate.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 5 -->
+        <article class="question" data-answer="A">
+          <div class="q-head">
+            <div class="q-num">Q5</div>
+            <div>
+              <div><strong>Which graph type is best for showing changes in a single client’s target behavior across baseline and intervention phases?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q5" value="A"> A. Line graph (single-subject design)</label>
+            <label class="option"><input type="radio" name="q5" value="B"> B. Bar chart comparing group means</label>
+            <label class="option"><input type="radio" name="q5" value="C"> C. Pie chart showing distribution of responses</label>
+            <label class="option"><input type="radio" name="q5" value="D"> D. Scatter plot for correlational data</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: A.</strong>
+            <p>Single-subject research commonly uses line graphs to show level, trend, and variability across phases for one client. Bar charts and pie charts are not suitable for serial, time-ordered data in behavior analysis.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 6 -->
+        <article class="question" data-answer="B">
+          <div class="q-head">
+            <div class="q-num">Q6</div>
+            <div>
+              <div><strong>During discrete trial training (DTT), you notice the client has high latency to respond. Which modification is best to reduce latency?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q6" value="A"> A. Increase intertrial interval</label>
+            <label class="option"><input type="radio" name="q6" value="B"> B. Use a prompt (e.g., model or gesture) and gradually fade it</label>
+            <label class="option"><input type="radio" name="q6" value="C"> C. Switch to extinction</label>
+            <label class="option"><input type="radio" name="q6" value="D"> D. Remove all reinforcement for a session</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: B.</strong>
+            <p>Prompts (modeling, gestural) reduce latency by providing additional stimulus control; then fade prompts systematically to transfer control to the natural discriminative stimulus. Increasing intertrial intervals often increases latency; extinction and removing reinforcement are inappropriate here.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 7 -->
+        <article class="question" data-answer="D">
+          <div class="q-head">
+            <div class="q-num">Q7</div>
+            <div>
+              <div><strong>You collect data using 10-second partial-interval recording and observe high rates for a behavior that is brief and frequent. What is a likely measurement bias?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q7" value="A"> A. Underestimation of occurrence</label>
+            <label class="option"><input type="radio" name="q7" value="B"> B. Accurate frequency counts</label>
+            <label class="option"><input type="radio" name="q7" value="C"> C. Underestimation of duration</label>
+            <label class="option"><input type="radio" name="q7" value="D"> D. Overestimation of occurrence (because brief behaviors often occupy intervals)</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: D.</strong>
+            <p>Partial-interval recording scores an interval as positive if the behavior occurred at any time during the interval, which can overestimate the true rate for brief, frequent behaviors. Continuous recording is preferred for accurate frequency/duration.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 8 -->
+        <article class="question" data-answer="A">
+          <div class="q-head">
+            <div class="q-num">Q8</div>
+            <div>
+              <div><strong>A behavior support plan includes the strategy: "Provide functional communication training (FCT) for escape-maintained problem behavior." What is the defining feature of FCT?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q8" value="A"> A. Teach an alternative communication response that produces the same function as the problem behavior</label>
+            <label class="option"><input type="radio" name="q8" value="B"> B. Punish problem behavior to reduce it</label>
+            <label class="option"><input type="radio" name="q8" value="C"> C. Use DRO only</label>
+            <label class="option"><input type="radio" name="q8" value="D"> D. Increase task demands without support</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: A.</strong>
+            <p>FCT teaches a communicative response (e.g., "break please") that is reinforced with the same consequence maintaining problem behavior (escape, attention, tangible). It replaces the function, not punish behavior. DRO may be used alongside but is not FCT itself.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 9 -->
+        <article class="question" data-answer="C">
+          <div class="q-head">
+            <div class="q-num">Q9</div>
+            <div>
+              <div><strong>Which is the correct pairing: partial-interval, whole-interval, momentary time sampling — with the measurement they are best for?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q9" value="A"> A. Partial-interval = accurate duration; Whole-interval = frequency; Momentary = latency</label>
+            <label class="option"><input type="radio" name="q9" value="B"> B. Partial-interval = latency; Whole-interval = momentary; Momentary = duration</label>
+            <label class="option"><input type="radio" name="q9" value="C"> C. Partial-interval = estimates occurrence (may overestimate); Whole-interval = estimates duration (may underestimate); Momentary = best for estimating prevalence at a moment</label>
+            <label class="option"><input type="radio" name="q9" value="D"> D. All interval methods measure exact frequency</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: C.</strong>
+            <p>Partial-interval indicates if behavior occurred during an interval (can overestimate). Whole-interval records if behavior occupied the entire interval (can underestimate). Momentary sampling records whether behavior occurs at an instant—useful for prevalence estimates but not perfect for frequency/duration.</p>
+          </div>
+        </article>
+
+        <!-- QUESTION 10 -->
+        <article class="question" data-answer="B">
+          <div class="q-head">
+            <div class="q-num">Q10</div>
+            <div>
+              <div><strong>When implementing token economy, what is critical to ensure tokens function as conditioned reinforcers?</strong></div>
+            </div>
+          </div>
+
+          <div class="options" role="radiogroup">
+            <label class="option"><input type="radio" name="q10" value="A"> A. Tokens are expensive to obtain</label>
+            <label class="option"><input type="radio" name="q10" value="B"> B. Tokens are consistently paired with backup reinforcers and exchanged reliably</label>
+            <label class="option"><input type="radio" name="q10" value="C"> C. Tokens are visible only to staff</label>
+            <label class="option"><input type="radio" name="q10" value="D"> D. Tokens are only awarded intermittently without exchange</label>
+          </div>
+
+          <button class="check-btn" onclick="checkAnswer(this)">Check Answer</button>
+          <div class="explanation">
+            <strong>Answer: B.</strong>
+            <p>For tokens to be conditioned reinforcers, they must be paired with meaningful backup reinforcers and consistently exchangeable. Reliability and clear contingency make tokens effective; inconsistency undermines their reinforcing value.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faqs" class="card faq" aria-labelledby="faqs-heading">
+      <h2 id="faqs-heading">Frequently Asked Questions — RBT Exam & Practice</h2>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>What should I bring to the RBT exam?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          You can bring a government-issued photo ID and your exam appointment confirmation. Follow the test center rules for electronics and breaks.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>How long is the RBT exam?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          The RBT exam typically allows 90 minutes for 75 questions, but confirm current exam rules from your test administrator.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>Can I use practice tests to pass the RBT exam?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Yes — well-designed practice tests improve familiarity with item formats and timing. Review explanations for every wrong answer to learn concepts deeply.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>Are calculators allowed during the exam?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Check the exam administrator's rules. Many testing centers allow basic calculators, but policies change—verify ahead of exam day.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>How should I track progress while studying?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Track accuracy and timing across practice sets, review wrong items, and monitor trends (accuracy over weeks). Focus on weak domains until improvement is consistent.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>What content areas does the RBT test cover?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Core areas include measurement and data, assessment, skill acquisition, behavior reduction, professional conduct, and documentation/communication.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>How many practice questions should I do per study session?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Aim for 20–30 quality questions per session with thorough review. Short, frequent sessions beat long, unfocused study marathons.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>Should I time myself on practice tests?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Yes — simulate exam conditions occasionally to build pacing. Work on accuracy first, then gradually add timed practice to increase speed.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>How do I use incorrect items effectively?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          Review why the correct answer is correct and why alternatives are wrong. Re-test yourself on the concept later and create a short note or flashcard for spaced review.
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="question-row">
+          <div><strong>Are these practice questions representative of the actual exam?</strong></div>
+          <button aria-expanded="true" onclick="toggleFaq(this)">▼</button>
+        </div>
+        <div class="answer" style="display:block">
+          These questions are crafted to reflect exam-style scenarios and concepts, but the real exam's exact wording and distribution may differ. Use this as targeted practice and review official resources too.
+        </div>
+      </div>
+
+    </section>
+
+    <section class="card" aria-label="next-steps">
+      <h3>Next steps — quick checklist</h3>
+      <ul>
+        <li><strong>Take the full 75-question practice test</strong> (use the link at the top).</li>
+        <li><strong>Review every explanation</strong> — focus on things you don’t understand yet.</li>
+        <li><strong>Time yourself</strong> on a practice set to build pacing.</li>
+      </ul>
+
+      <footer>
+        <small>Site hosted on GitHub Pages • Built mobile-first • Original practice content</small>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- FAQ structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What should I bring to the RBT exam?","acceptedAnswer":{"@type":"Answer","text":"You can bring a government-issued photo ID and your exam appointment confirmation. Follow the test center rules for electronics and breaks."}},
+      {"@type":"Question","name":"How long is the RBT exam?","acceptedAnswer":{"@type":"Answer","text":"The RBT exam typically allows 90 minutes for 75 questions, but confirm current exam rules from your test administrator."}},
+      {"@type":"Question","name":"Can I use practice tests to pass the RBT exam?","acceptedAnswer":{"@type":"Answer","text":"Yes — well-designed practice tests improve familiarity with item formats and timing. Review explanations for every wrong answer to learn concepts deeply."}},
+      {"@type":"Question","name":"Are calculators allowed during the exam?","acceptedAnswer":{"@type":"Answer","text":"Check the exam administrator's rules. Many testing centers allow basic calculators, but policies change—verify ahead of exam day."}},
+      {"@type":"Question","name":"How should I track progress while studying?","acceptedAnswer":{"@type":"Answer","text":"Track accuracy and timing across practice sets, review wrong items, and monitor trends (accuracy over weeks). Focus on weak domains until improvement is consistent."}},
+      {"@type":"Question","name":"What content areas does the RBT test cover?","acceptedAnswer":{"@type":"Answer","text":"Core areas include measurement and data, assessment, skill acquisition, behavior reduction, professional conduct, and documentation/communication."}},
+      {"@type":"Question","name":"How many practice questions should I do per study session?","acceptedAnswer":{"@type":"Answer","text":"Aim for 20–30 quality questions per session with thorough review. Short, frequent sessions beat long, unfocused study marathons."}},
+      {"@type":"Question","name":"Should I time myself on practice tests?","acceptedAnswer":{"@type":"Answer","text":"Yes — simulate exam conditions occasionally to build pacing. Work on accuracy first, then gradually add timed practice to increase speed."}},
+      {"@type":"Question","name":"How do I use incorrect items effectively?","acceptedAnswer":{"@type":"Answer","text":"Review why the correct answer is correct and why alternatives are wrong. Re-test yourself on the concept later and create a short note or flashcard for spaced review."}},
+      {"@type":"Question","name":"Are these practice questions representative of the actual exam?","acceptedAnswer":{"@type":"Answer","text":"These questions are crafted to reflect exam-style scenarios and concepts, but the real exam's exact wording and distribution may differ. Use this as targeted practice and review official resources too."}}
+    ]
+  }
+  </script>
+
+  <script>
+    // Check answer function
+    function checkAnswer(btn){
+      const article = btn.closest('.question');
+      const chosen = [...article.querySelectorAll('input[type="radio"]')].find(r=>r.checked);
+      const explanation = article.querySelector('.explanation');
+      explanation.classList.remove('correct','incorrect');
+      if(!chosen){
+        explanation.classList.add('show','incorrect');
+        explanation.innerHTML = '<strong>No answer selected.</strong><p>Please choose an option, then click Check Answer again.</p>';
+        return;
+      }
+      const correct = article.getAttribute('data-answer');
+      const you = chosen.value;
+      if(you === correct){
+        article.classList.add('correct');
+        article.classList.remove('incorrect');
+        explanation.classList.add('show','correct');
+      } else {
+        article.classList.add('incorrect');
+        article.classList.remove('correct');
+        explanation.classList.add('show','incorrect');
+      }
+      // ensure explanation visible (the HTML already contains the correct explanation text)
+      explanation.setAttribute('aria-hidden','false');
+      // scroll explanation into view smoothly
+      explanation.scrollIntoView({behavior:'smooth',block:'nearest'});
+    }
+
+    // FAQ toggles (all are expanded by default for SEO)
+    function toggleFaq(btn){
+      const item = btn.closest('.item');
+      const answer = item.querySelector('.answer');
+      const isShown = answer.style.display !== 'none';
+      answer.style.display = isShown ? 'none' : 'block';
+      btn.textContent = isShown ? '►' : '▼';
+      btn.setAttribute('aria-expanded', String(!isShown));
+    }
+
+    // Make clicking labels toggle radio (support keyboard and mobile)
+    document.querySelectorAll('.option').forEach(opt=>{
+      opt.addEventListener('click', function(e){
+        const input = this.querySelector('input[type="radio"]');
+        if(input) input.checked = true;
+      });
+    });
+  </script>
 </body>
 </html>
